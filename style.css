@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "outfit";
-  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf) format("truetype"),
-    url(/assets/fonts/outfit/static/Outfit-Medium.ttf) format("ttf");
+  font-family: "outfit-regular";
+  src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,6 +31,20 @@ body {
   margin: 2rem;
   max-width: 800px;
   border-radius: 1rem;
+  padding: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recipe-introduction > h1 {
+  font-family: "Young Serif", sans-serif;
+}
+
+.recipe-introduction > p {
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit-regular", sans-serif;
 }
 
 img {
@@ -40,6 +53,6 @@ img {
   border-radius: 1em;
 }
 
-h1 {
+/* h1 {
   font-family: "Young Serif", sans-serif;
-}
+} */
