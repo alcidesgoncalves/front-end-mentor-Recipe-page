@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "outfit-medium";
+  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
   font-family: "Young Serif";
   src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
   font-weight: 400;
@@ -26,6 +33,12 @@ body {
   align-items: center;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 1em;
+}
+
 .container {
   background-color: hsl(0, 0%, 100%);
   margin: 2rem;
@@ -40,6 +53,7 @@ body {
 
 .recipe-introduction > h1 {
   font-family: "Young Serif", sans-serif;
+  font-weight: 400;
 }
 
 .recipe-introduction > p {
@@ -47,12 +61,95 @@ body {
   font-family: "outfit-regular", sans-serif;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.recipe-preparation {
+  background-color: hsl(330, 100%, 98%);
+  padding: 2em;
   border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
-/* h1 {
+.recipe-preparation > h3 {
+  font-family: "outfit-medium", sans-serif;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+.recipe-preparation > ul {
+  font-family: "outfit-regular", sans-serif;
+  color: hsl(30, 10%, 34%);
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recipe-ingredients {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: auto;
+}
+
+.recipe-ingredients > h2 {
+  color: hsl(14, 45%, 36%);
   font-family: "Young Serif", sans-serif;
-} */
+  font-weight: 400;
+}
+
+.recipe-ingredients > ul {
+  display: grid;
+  grid-column: 1fr;
+  gap: 10px;
+  margin-left: 25px;
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit-regular", sans-serif;
+}
+
+hr {
+  color: hsl(14, 45%, 36%);
+}
+
+.recipe-instructions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: auto;
+}
+
+.recipe-instructions > h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  margin-top: -28px;
+}
+
+.recipe-instructions > ol {
+  display: grid;
+  grid-column: 1fr;
+  gap: 10px;
+  margin-left: 25px;
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit-regular", sans-serif;
+}
+
+.recipe-nutrition {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: auto;
+}
+
+.recipe-nutrition > h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  margin-top: -28px;
+}
+
+.recipe-nutrition > p,
+table {
+  color: hsl(30, 10%, 34%);
+  font-family: "outfit-regular", sans-serif;
+}
